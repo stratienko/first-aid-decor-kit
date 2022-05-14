@@ -1,0 +1,36 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "prettier"
+  ],
+  "plugins": [
+    "prettier"
+  ],
+  "rules": {
+    "eol-last": "error",
+    "no-multiple-empty-lines": [
+      "error",
+      {
+        "max": 1,
+        "maxBOF": 0,
+        "maxEOF": 1
+      }
+    ],
+    "no-trailing-spaces": "error",
+    "prefer-arrow-callback": "error",
+    "prefer-const": "error",
+    "prettier/prettier": "error",
+    "quotes": [
+      "error",
+      "double"
+    ],
+    "react/display-name": "off",
+    "react/prop-types": "off",
+    "react/react-in-jsx-scope": "off",
+    "require-jsdoc": "off",
+    "semi": [
+      "error",
+      "always"
+    ]
+  }
+}
