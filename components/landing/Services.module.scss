@@ -1,0 +1,22 @@
+.fade-in {
+  $fadeDelay: 150ms;
+  animation: fade-in 700ms linear 1 normal forwards;
+
+  @for $itemIndex from 1 through 6 {
+    &:nth-child(#{$itemIndex}) {
+      animation-delay: $itemIndex * $fadeDelay;
+    }
+  }
+}
+
+@keyframes fade-in {
+  from {
+    filter: grayscale(100%);
+    opacity: 0;
+  }
+
+  to {
+    filter: grayscale(0%);
+    opacity: 1;
+  }
+}
