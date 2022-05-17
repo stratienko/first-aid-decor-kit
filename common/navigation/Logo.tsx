@@ -3,7 +3,7 @@ import React from "react";
 
 export const Logo = () => {
   return (
-    <div className="flex justify-center items-center text-xl cursor-default text-[#79736a]">
+    <div className="flex justify-center items-center text-xl cursor-default text-[#3f4241]">
       <span className="flex mr-4">
         <Image
           width={48}
@@ -14,7 +14,7 @@ export const Logo = () => {
           alt="First Aid Decor Kit Logo"
         />
       </span>
-      <span>First Aid Decor Kit</span>
+      <h1>First Aid Decor Kit</h1>
     </div>
   );
 };

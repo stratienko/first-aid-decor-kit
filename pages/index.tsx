@@ -3,26 +3,67 @@ import Head from "next/head";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { Fragment } from "react";
 import { About, Services } from "components/landing";
-import { getServices } from "resources";
 
-type Props = Awaited<ReturnType<typeof serverSideTranslations>> & {
-  services: Array<TService>;
-};
+const description = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+molestiae sunt, porro totam reiciendis repellat nostrum tempora itaque
+nihil vel rerum. Nostrum, rem id officia voluptatem ducimus quibusdam
+eaque in. Repellat magnam maxime inventore vel ab, nihil commodi nam
+rerum necessitatibus quaerat, voluptates earum nobis id? Accusamus
+veritatis, sed nobis id non exercitationem officia quis, reprehenderit
+nesciunt aliquam hic nam.`;
+
+const services: Array<TService> = [
+  {
+    title: "Аналіз Вашого посудного гардеробу",
+    description,
+    imgSrc: "/images/articles/article-img-1.jpeg",
+    link: "#",
+  },
+  {
+    title: "Декорування приміщень",
+    description,
+    imgSrc: "/images/articles/article-img-2.jpeg",
+    link: "#",
+  },
+  {
+    title: "Експрес-консультація з декорування",
+    description,
+    imgSrc: "/images/articles/article-img-3.jpeg",
+    link: "#",
+  },
+  {
+    title: "Підготовка нерухомості до продажу або аренди",
+    description,
+    imgSrc: "/images/articles/article-img-4.jpeg",
+    link: "#",
+  },
+  {
+    title: "Декорування до свят",
+    description,
+    imgSrc: "/images/articles/article-img-5.jpeg",
+    link: "#",
+  },
+  {
+    title: "Реквізит для фотосесій",
+    description,
+    imgSrc: "/images/articles/article-img-6.jpeg",
+    link: "#",
+  },
+];
+
+type Props = Awaited<ReturnType<typeof serverSideTranslations>>;
 
 export const getStaticProps: GetStaticProps<Props> = async ({ locale }) => {
   const { _nextI18Next } = await serverSideTranslations(locale!);
 
-  const services = await getServices();
-
   return {
     props: {
       _nextI18Next,
-      services,
     },
   };
 };
 
-const Home: NextPage<Props> = ({ services }) => {
+const Home: NextPage<Props> = () => {
   return (
     <Fragment>
       <Head>
