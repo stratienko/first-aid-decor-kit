@@ -1,7 +1,10 @@
+$initial-scale: 0.98;
+$final-scale: 1;
+
 .gallery-image {
   $delay: 350ms;
 
-  transform: scale(0.98);
+  transform: scale($initial-scale);
   animation: fade-in 700ms linear 1 normal forwards;
 
   @media only screen and (min-width: 40rem) {
@@ -14,19 +17,19 @@
 }
 
 .service-item {
-  transform: scale(0.98);
+  transform: scale($initial-scale);
   animation: fade-in 700ms linear 1 normal forwards;
 }
 
 @keyframes fade-in {
   from {
-    transform: scale(0.98);
+    transform: scale($initial-scale);
     filter: grayscale(100%) blur(0.125rem);
     opacity: 0;
   }
 
   to {
-    transform: scale(1);
+    transform: scale($final-scale);
     filter: grayscale(0%) blur(0);
     opacity: 1;
   }
