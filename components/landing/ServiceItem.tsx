@@ -2,7 +2,7 @@ import { useIntersectionObserver } from "hooks/useIntersectionObserver";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useCallback, useState } from "react";
-import styles from "./Services.module.scss";
+import styles from "./landing.module.scss";
 
 type Props = {
   service: TService;
@@ -34,12 +34,9 @@ export const ServiceItem = React.memo(({ service }: Props) => {
   return (
     <li
       ref={listElement}
-      className={`
-        ${
-          isShown ? styles["fade-in"] : ""
-        } opacity-0 bg-white transition-all flex flex-col delay-75 
-        shadow-md sm:hover:shadow-xl font-noto text-[#3f4241]
-      `}
+      className={"opacity-0 bg-white transition-all flex flex-col delay-75 shadow-md sm:hover:shadow-xl font-noto text-[#3f4241] ".concat(
+        isShown ? styles["service-item"] : ""
+      )}
     >
       <div>
         <Image

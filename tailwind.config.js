@@ -12,6 +12,13 @@ module.exports = {
         "about-gallery": "24rem 1fr",
         services: "repeat(auto-fill, minmax(20rem, 1fr));",
       },
+      gridTemplateRows: {
+        // Simple 8 row grid
+        10: "repeat(10, minmax(0, 1fr))",
+      },
+      gridRow: {
+        "span-7": "span 7 / span 7",
+      },
       fontFamily: {
         noto: ["Noto Serif Display", "serif"],
       },

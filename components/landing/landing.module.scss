@@ -1,0 +1,33 @@
+.gallery-image {
+  $delay: 350ms;
+
+  transform: scale(0.98);
+  animation: fade-in 700ms linear 1 normal forwards;
+
+  @media only screen and (min-width: 40rem) {
+    @for $index from 0 through 3 {
+      &:nth-child(#{$index + 1}) {
+        animation-delay: $index * $delay;
+      }
+    }
+  }
+}
+
+.service-item {
+  transform: scale(0.98);
+  animation: fade-in 700ms linear 1 normal forwards;
+}
+
+@keyframes fade-in {
+  from {
+    transform: scale(0.98);
+    filter: grayscale(100%) blur(0.125rem);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    filter: grayscale(0%) blur(0);
+    opacity: 1;
+  }
+}
