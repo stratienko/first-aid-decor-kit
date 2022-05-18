@@ -14,7 +14,7 @@ export const Logo = () => {
           alt="First Aid Decor Kit Logo"
         />
       </span>
-      <h1>First Aid Decor Kit</h1>
+      <h1>First Aid Decor</h1>
     </div>
   );
 };

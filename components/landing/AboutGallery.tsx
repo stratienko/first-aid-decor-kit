@@ -3,7 +3,7 @@ import React, { useCallback, useState } from "react";
 import styles from "./landing.module.scss";
 import { useIntersectionObserver } from "hooks/useIntersectionObserver";
 
-export const Gallery = () => {
+export const AboutGallery = () => {
   const [isShown, setIsShown] = useState(false);
 
   const intersectionCallback: IntersectionObserverCallback = useCallback(
@@ -25,7 +25,10 @@ export const Gallery = () => {
   );
 
   return (
-    <figure ref={figureElement} className="w-full grid sm:grid-cols-2 gap-8">
+    <figure
+      ref={figureElement}
+      className="w-full grid sm:grid-cols-2 gap-8 content-evenly"
+    >
       <div
         className={"hidden sm:block opacity-0 relative row-span-1 ".concat(
           isShown ? styles["gallery-image"] : ""
@@ -55,7 +58,7 @@ export const Gallery = () => {
         />
       </div>
       <div
-        className={"opacity-0 relative row-span-2 ".concat(
+        className={"self-end opacity-0 relative row-span-2 ".concat(
           isShown ? styles["gallery-image"] : ""
         )}
       >

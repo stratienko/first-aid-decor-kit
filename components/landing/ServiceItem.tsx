@@ -28,7 +28,7 @@ export const ServiceItem = React.memo(({ service }: Props) => {
 
   const listElement = useIntersectionObserver<HTMLLIElement>(
     intersectionCallback,
-    { threshold: [0.2] }
+    { threshold: [0.25] }
   );
 
   return (

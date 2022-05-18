@@ -2,7 +2,7 @@ import type { GetStaticProps, NextPage } from "next";
 import Head from "next/head";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { Fragment } from "react";
-import { About, Services } from "components/landing";
+import { About, Intro, Services } from "components/landing";
 
 const description = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
 molestiae sunt, porro totam reiciendis repellat nostrum tempora itaque
@@ -72,6 +72,7 @@ const Home: NextPage<Props> = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="w-full flex flex-col justify-center items-center">
+        <Intro />
         <About />
         <Services services={services} />
       </main>

@@ -57,7 +57,7 @@ export const MobileMenu = () => {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-0"
       >
-        <Menu.Items className="absolute w-full flex flex-col top-20 right-0 origin-top-right bg-white shadow-lg">
+        <Menu.Items className="divide-y absolute w-full flex flex-col top-20 right-0 origin-top-right bg-white shadow-lg">
           <Link href={"#"} passHref>
             <Menu.Item
               as={"span"}
