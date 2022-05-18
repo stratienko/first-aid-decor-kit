@@ -57,7 +57,7 @@ export const MobileMenu = () => {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-0"
       >
-        <Menu.Items className="divide-y absolute w-full flex flex-col top-20 right-0 origin-top-right bg-white shadow-lg">
+        <Menu.Items className="divide-y divide-primary absolute w-full flex flex-col top-20 right-0 origin-top-right text-primary bg-secondary shadow-lg">
           <Link href={"#"} passHref>
             <Menu.Item
               as={"span"}
@@ -72,14 +72,6 @@ export const MobileMenu = () => {
               className="cursor-pointer hover:underline p-4"
             >
               Послуги
-            </Menu.Item>
-          </Link>
-          <Link href={"#"} passHref>
-            <Menu.Item
-              as={"span"}
-              className="cursor-pointer hover:underline p-4"
-            >
-              Портфоліо
             </Menu.Item>
           </Link>
           <Link href={"#"} passHref>

@@ -14,40 +14,45 @@ nesciunt aliquam hic nam.`;
 
 const services: Array<TService> = [
   {
-    title: "Аналіз Вашого посудного гардеробу",
-    description,
-    imgSrc: "/images/articles/article-img-1.jpeg",
-    link: "#",
-  },
-  {
-    title: "Декорування приміщень",
-    description,
-    imgSrc: "/images/articles/article-img-2.jpeg",
-    link: "#",
-  },
-  {
     title: "Експрес-консультація з декорування",
-    description,
+    description:
+      "Час щось змінити! Отримайте швидкий аналіз інтер'єру, виявіть його сильні та слабкі риси, отримайте рекомендації щодо придбання декору чи меблів.",
+    imgSrc: "/images/articles/express-decor.jpeg",
+    link: "/service/consulting",
+  },
+  {
+    title: "Декорування Вашої оселі під ключ",
+    description:
+      "Від ідеї до втілення працюємо пліч-о-пліч для досягнення найкращого результату. Кожен проект індивідуальний, це може бути окрема кімната або увесь будинок.",
+    imgSrc: "/images/articles/article-img-2.jpeg",
+    link: "/service/house-decoration",
+  },
+  {
+    title: "Підготовка житла до оренди чи продажу",
+    description:
+      "Зробіть Ваше оголошення помітним! Вартість задекорованної та охайної оселі завжди вища, бо платять не за квадратні метри, а за відчуття.",
+    imgSrc: "/images/articles/property-preparation.jpeg",
+    link: "/service/property-preparation",
+  },
+  {
+    title: "Святкове декорування та сервіровка",
+    description:
+      "Нехай свято буде незабутнім! Щоб зробити красиву сервіровку або прикрасити увесь дім квітами, приводи не потрібні, лише декоратор.",
     imgSrc: "/images/articles/article-img-3.jpeg",
-    link: "#",
+    link: "/service/holiday-decoration",
   },
   {
-    title: "Підготовка нерухомості до продажу або аренди",
+    title: "Створення столового гардеробу",
     description,
-    imgSrc: "/images/articles/article-img-4.jpeg",
-    link: "#",
+    imgSrc: "/images/articles/dining-room-wardrobe.jpeg",
+    link: "/service/dining-room-wardrobe",
   },
   {
-    title: "Декорування до свят",
-    description,
-    imgSrc: "/images/articles/article-img-5.jpeg",
-    link: "#",
-  },
-  {
-    title: "Реквізит для фотосесій",
-    description,
+    title: "First Aid Decor Kit",
+    description:
+      "Готові набори для самостійного декорування оселі та сервіровок. Кожен набір унікальний, тож не зволікайте та встигніть придбати той, що більше всього сподобався!",
     imgSrc: "/images/articles/article-img-6.jpeg",
-    link: "#",
+    link: "/services/first-aid-decor-kit",
   },
 ];
 

@@ -1,3 +1,5 @@
+const colors = require("tailwindcss/colors");
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -7,6 +9,11 @@ module.exports = {
 
   plugins: [require("@tailwindcss/line-clamp")],
   theme: {
+    colors: {
+      ...colors,
+      primary: "#3f4241",
+      secondary: "#e5e5e5",
+    },
     extend: {
       gridTemplateColumns: {
         "about-gallery": "24rem 1fr",

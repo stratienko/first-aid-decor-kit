@@ -4,26 +4,35 @@ import { AboutGallery } from "./AboutGallery";
 
 export const About = () => {
   return (
-    <section className="w-full px-4 py-8 sm:px-8 sm:py-16 flex items-center justify-center">
-      <div className="w-full max-w-360 grid lg:grid-cols-2 gap-8 sm:gap-16">
+    <section
+      id="about"
+      className="w-full px-4 sm:px-8 flex items-center justify-center"
+    >
+      <div className="py-8 sm:py-16 w-full max-w-360 grid lg:grid-cols-2 gap-8 xl:gap-16">
         <AboutGallery />
-        <article className="font-noto tracking-wider text-[#3f4241] lg:py-16 flex flex-col justify-between items-end">
-          <div className="w-full mb-8 sm:mb-16">
-            <h1 className="mb-8 sm:mb-16 text-4xl lg:text-6xl">Про нас</h1>
-            <p className="sm:text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repudiandae nulla quaerat, dolorem quibusdam ipsa animi nisi
-              nostrum explicabo magnam totam dignissimos perferendis ut ipsam
-              optio a illo recusandae fugit cupiditate. Pariatur neque dolores
-              impedit consequuntur non laboriosam a iste laudantium
-              voluptatibus, quis accusamus sequi quidem vel doloribus
-              perspiciatis laborum corporis facilis velit culpa eum at. Eaque
-              debitis natus quod aliquid. Expedita voluptatum, corrupti quos
-              veniam eum neque iste aliquid accusamus at rerum labore?
-            </p>
+        <article className="font-noto tracking-wider text-primary lg:py-16 flex flex-col justify-between items-end">
+          <div className="w-full mb-8 xl:mb-16 space-y-8 xl:space-y-16">
+            <h1 className="text-4xl xl:text-6xl">Про нас</h1>
+            <div className="space-y-8">
+              <p className="text-lg">
+                Я творила як флорист, event-декоратор та рік навчалась історії
+                мистецтв у Англії. Окрім мене, у проекті працює невеличка
+                команда. Спеціалісти з озеленення, пошиву текстилю, виробництва
+                предметів інтер’єру та посуду, флористи, фотографи, митці та
+                технічні працівники. Ми можемо все! Онлайн та офлайн.
+              </p>
+              <p className="text-lg">
+                Проект <b>First Aid Decor</b> співпрацює не тільки із приватними
+                клієнтами та ріелторськими агенціями, а ще й із брендами декору,
+                шоурумами та виробництвами. Допомагаємо із предметними зйомками
+                та візуалом, а також співпрацюємо у рамках проекту{" "}
+                <b>First Aid Decor Kit</b> (готові набори предметів для
+                декорування осель).
+              </p>
+            </div>
           </div>
           <Link href={"#"} passHref>
-            <button className="w-full sm:w-1/2 p-4 border border-gray-400 bg-[#e5e5e5]">
+            <button className="w-full sm:w-1/2 p-4 border border-primary text-lg">
               Детальніше
             </button>
           </Link>
