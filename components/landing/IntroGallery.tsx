@@ -30,8 +30,8 @@ export const IntroGallery = () => {
       className="grid sm:grid-cols-5 gap-8 content-evenly"
     >
       <div
-        className={"opacity-0 relative col-span-2 ".concat(
-          isShown ? styles["gallery-image"] : ""
+        className={"opacity-0 scale-98 relative col-span-2 ".concat(
+          isShown ? "animate-fade-in delay-animation" : ""
         )}
       >
         <Image
@@ -43,22 +43,22 @@ export const IntroGallery = () => {
         />
       </div>
       <div
-        className={"opacity-0 hidden sm:block relative col-span-3 ".concat(
-          isShown ? styles["gallery-image"] : ""
+        className={"opacity-0 scale-98 hidden sm:block relative col-span-3 ".concat(
+          isShown ? "animate-fade-in delay-animation" : ""
         )}
       >
         <Image src="/images/intro-2.jpeg" layout="fill" alt="Intro" />
       </div>
       <div
-        className={"opacity-0 hidden sm:block relative col-span-3 ".concat(
-          isShown ? styles["gallery-image"] : ""
+        className={"opacity-0 scale-98 hidden sm:block relative col-span-3 ".concat(
+          isShown ? "animate-fade-in delay-animation" : ""
         )}
       >
         <Image src="/images/intro-3.jpeg" layout="fill" alt="Intro" />
       </div>
       <div
-        className={"opacity-0 hidden sm:block relative col-span-2 ".concat(
-          isShown ? styles["gallery-image"] : ""
+        className={"opacity-0 scale-98 hidden sm:block relative col-span-2 ".concat(
+          isShown ? "animate-fade-in delay-animation" : ""
         )}
       >
         <Image

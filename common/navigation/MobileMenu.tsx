@@ -1,6 +1,8 @@
 import { Menu, Transition } from "@headlessui/react";
+import For from "common/for";
 import Link from "next/link";
 import React, { Fragment } from "react";
+import { NavigationProps } from "./Navigation";
 
 const MenuIcon = () => (
   <svg
@@ -40,7 +42,9 @@ const CloseIcon = () => (
   </svg>
 );
 
-export const MobileMenu = () => {
+export const MobileMenu = (props: NavigationProps) => {
+  const { routes = [] } = props;
+
   return (
     <Fragment>
       <Menu.Button className="md:hidden p-4">
@@ -57,31 +61,24 @@ export const MobileMenu = () => {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-0"
       >
-        <Menu.Items className="divide-y divide-primary absolute w-full flex flex-col top-20 right-0 origin-top-right text-primary bg-secondary shadow-lg">
-          <Link href={"#"} passHref>
-            <Menu.Item
-              as={"span"}
-              className="cursor-pointer hover:underline p-4"
-            >
-              Про нас
-            </Menu.Item>
-          </Link>
-          <Link href={"#"} passHref>
-            <Menu.Item
-              as={"span"}
-              className="cursor-pointer hover:underline p-4"
-            >
-              Послуги
-            </Menu.Item>
-          </Link>
-          <Link href={"#"} passHref>
-            <Menu.Item
-              as={"span"}
-              className="cursor-pointer hover:underline p-4"
-            >
-              Контакти
-            </Menu.Item>
-          </Link>
+        <Menu.Items className="border border-t-primary divide-y divide-primary absolute w-full flex flex-col top-20 right-0 origin-top-right text-primary bg-secondary shadow-lg">
+          <For
+            items={routes}
+            render={(linkProps) => {
+              const { routeName, ...restLinkProps } = linkProps;
+
+              return (
+                <Link {...restLinkProps} key={restLinkProps.href.toString()}>
+                  <Menu.Item
+                    as={"span"}
+                    className="cursor-pointer hover:underline p-4"
+                  >
+                    {routeName}
+                  </Menu.Item>
+                </Link>
+              );
+            }}
+          />
         </Menu.Items>
       </Transition>
     </Fragment>

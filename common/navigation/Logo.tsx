@@ -10,7 +10,7 @@ export const Logo = () => {
           height={48}
           unoptimized
           layout="fixed"
-          src={"/images/icons/logo.svg"}
+          src={"/icons/logo.svg"}
           alt="First Aid Decor Logo"
         />
       </span>

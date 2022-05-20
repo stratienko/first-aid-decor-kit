@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React from "react";
 import { AboutGallery } from "./AboutGallery";
 
@@ -8,10 +7,10 @@ export const About = () => {
       id="about"
       className="w-full px-4 sm:px-8 flex items-center justify-center"
     >
-      <div className="py-8 sm:py-16 w-full max-w-360 grid lg:grid-cols-2 gap-8 xl:gap-16">
+      <div className="py-8 sm:py-16 w-full max-w-360 grid xl:grid-cols-2 gap-8 xl:gap-16">
         <AboutGallery />
-        <article className="font-noto tracking-wider text-primary lg:py-16 flex flex-col justify-between items-end">
-          <div className="w-full mb-8 xl:mb-16 space-y-8 xl:space-y-16">
+        <article className="font-noto tracking-wider text-primary xl:py-16">
+          <div className="w-full space-y-8 xl:space-y-16">
             <h1 className="text-4xl xl:text-6xl">Про нас</h1>
             <div className="space-y-8">
               <p className="text-lg">
@@ -31,11 +30,6 @@ export const About = () => {
               </p>
             </div>
           </div>
-          <Link href={"#"} passHref>
-            <button className="w-full sm:w-1/2 p-4 border border-primary text-lg">
-              Детальніше
-            </button>
-          </Link>
         </article>
       </div>
     </section>

@@ -11,7 +11,7 @@ export const Services = React.memo((props: Props) => {
   return (
     <section
       id="services"
-      className="bg-secondary w-full px-4 flex items-center justify-center"
+      className="bg-secondary w-full px-4 sm:px-8 flex items-center justify-center"
     >
       <div className="py-8 xl:py-16 w-full max-w-360 flex flex-col justify-center items-center">
         <h1 className="w-full mb-8 xl:mb-16 text-4xl xl:text-6xl font-noto text-primary">

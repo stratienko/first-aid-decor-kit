@@ -30,8 +30,8 @@ export const AboutGallery = () => {
       className="w-full grid sm:grid-cols-2 gap-8 content-evenly"
     >
       <div
-        className={"hidden sm:block opacity-0 relative row-span-1 ".concat(
-          isShown ? styles["gallery-image"] : ""
+        className={"hidden sm:block opacity-0 scale-98 relative row-span-1 ".concat(
+          isShown ? "animate-fade-in delay-animation" : ""
         )}
       >
         <Image
@@ -44,8 +44,8 @@ export const AboutGallery = () => {
         />
       </div>
       <div
-        className={"hidden sm:block opacity-0 relative row-span-2 ".concat(
-          isShown ? styles["gallery-image"] : ""
+        className={"hidden sm:block opacity-0 scale-98 relative row-span-2 ".concat(
+          isShown ? "animate-fade-in delay-animation" : ""
         )}
       >
         <Image
@@ -58,8 +58,8 @@ export const AboutGallery = () => {
         />
       </div>
       <div
-        className={"self-end opacity-0 relative row-span-2 ".concat(
-          isShown ? styles["gallery-image"] : ""
+        className={"self-end opacity-0 scale-98 relative row-span-2 ".concat(
+          isShown ? "animate-fade-in delay-animation" : ""
         )}
       >
         <Image
@@ -72,8 +72,8 @@ export const AboutGallery = () => {
         />
       </div>
       <div
-        className={"hidden sm:block opacity-0 relative row-span-1 ".concat(
-          isShown ? styles["gallery-image"] : ""
+        className={"hidden sm:block opacity-0 scale-98 relative row-span-1 ".concat(
+          isShown ? "animate-fade-in delay-animation" : ""
         )}
       >
         <Image
