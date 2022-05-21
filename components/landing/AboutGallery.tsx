@@ -1,7 +1,10 @@
 import Image from "next/image";
 import React, { useCallback, useState } from "react";
-import styles from "./landing.module.scss";
 import { useIntersectionObserver } from "hooks/useIntersectionObserver";
+import About1 from "public/images/gallery-image-1.jpeg";
+import About2 from "public/images/gallery-image-2.jpeg";
+import About3 from "public/images/gallery-image-3.jpeg";
+import About4 from "public/images/gallery-image-4.jpeg";
 
 export const AboutGallery = () => {
   const [isShown, setIsShown] = useState(false);
@@ -35,8 +38,7 @@ export const AboutGallery = () => {
         )}
       >
         <Image
-          priority={true}
-          src="/images/gallery-image-1.jpeg"
+          src={About1}
           layout="responsive"
           height={1800}
           width={2400}
@@ -49,8 +51,7 @@ export const AboutGallery = () => {
         )}
       >
         <Image
-          priority={true}
-          src="/images/gallery-image-2.jpeg"
+          src={About2}
           layout="responsive"
           height={3600}
           width={2400}
@@ -63,8 +64,7 @@ export const AboutGallery = () => {
         )}
       >
         <Image
-          priority={true}
-          src="/images/gallery-image-3.jpeg"
+          src={About3}
           layout="responsive"
           height={3600}
           width={2400}
@@ -77,8 +77,7 @@ export const AboutGallery = () => {
         )}
       >
         <Image
-          priority={true}
-          src="/images/gallery-image-4.jpeg"
+          src={About4}
           layout="responsive"
           height={1800}
           width={2400}

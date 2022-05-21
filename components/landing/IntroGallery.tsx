@@ -1,7 +1,10 @@
 import { useIntersectionObserver } from "hooks/useIntersectionObserver";
 import Image from "next/image";
-import styles from "./landing.module.scss";
 import React, { useCallback, useState } from "react";
+import Intro1 from "public/images/intro-1.jpeg";
+import Intro2 from "public/images/intro-2.jpeg";
+import Intro3 from "public/images/intro-3.jpeg";
+import Intro4 from "public/images/intro-4.jpeg";
 
 export const IntroGallery = () => {
   const [isShown, setIsShown] = useState(false);
@@ -35,7 +38,8 @@ export const IntroGallery = () => {
         )}
       >
         <Image
-          src="/images/intro-1.jpeg"
+          src={Intro1}
+          priority={true}
           layout="responsive"
           height={2400}
           width={2400}
@@ -47,14 +51,14 @@ export const IntroGallery = () => {
           isShown ? "animate-fade-in delay-animation" : ""
         )}
       >
-        <Image src="/images/intro-2.jpeg" layout="fill" alt="Intro" />
+        <Image src={Intro2} priority={true} layout="fill" alt="Intro" />
       </div>
       <div
         className={"opacity-0 scale-98 hidden sm:block relative col-span-3 ".concat(
           isShown ? "animate-fade-in delay-animation" : ""
         )}
       >
-        <Image src="/images/intro-3.jpeg" layout="fill" alt="Intro" />
+        <Image src={Intro3} priority={true} layout="fill" alt="Intro" />
       </div>
       <div
         className={"opacity-0 scale-98 hidden sm:block relative col-span-2 ".concat(
@@ -62,7 +66,8 @@ export const IntroGallery = () => {
         )}
       >
         <Image
-          src="/images/intro-4.jpeg"
+          src={Intro4}
+          priority={true}
           layout="responsive"
           height={2400}
           width={2400}
