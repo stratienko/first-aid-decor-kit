@@ -11,14 +11,14 @@ export const About = () => {
           <div className="w-full space-y-8 xl:space-y-16">
             <h1 className="text-4xl xl:text-6xl font-bold">Про нас</h1>
             <div className="space-y-8">
-              <p className="text-xl sm:text-lg">
+              <p className="text-xl leading-relaxed">
                 Я творила як флорист, event-декоратор та рік навчалась історії
                 мистецтв у Англії. Окрім мене, у проекті працює невеличка
                 команда. Спеціалісти з озеленення, пошиву текстилю, виробництва
                 предметів інтер’єру та посуду, флористи, фотографи, митці та
                 технічні працівники. Ми можемо все! Онлайн та офлайн.
               </p>
-              <p className="text-xl sm:text-lg">
+              <p className="text-xl leading-relaxed">
                 Проект <b>First Aid Decor</b> співпрацює не тільки із приватними
                 клієнтами та ріелторськими агенціями, а ще й із брендами декору,
                 шоурумами та виробництвами. Допомагаємо із предметними зйомками

@@ -71,7 +71,7 @@ export const MobileMenu = (props: NavigationProps) => {
                 <Link {...restLinkProps} key={restLinkProps.href.toString()}>
                   <Menu.Item
                     as={"span"}
-                    className="cursor-pointer hover:underline p-4"
+                    className="focus:outline-none cursor-pointer hover:underline p-4"
                   >
                     {routeName}
                   </Menu.Item>

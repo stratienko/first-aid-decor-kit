@@ -41,7 +41,7 @@ export const ServiceItem = React.memo(({ service }: Props) => {
       <div>
         <Image
           src={previewSrc}
-          priority={false}
+          priority={true}
           alt="Article Image"
           width={2400}
           height={2400}
@@ -57,7 +57,7 @@ export const ServiceItem = React.memo(({ service }: Props) => {
         </div>
         {!disabled ? (
           <Link href={`/services/${serviceName}`} passHref>
-            <button className="p-4 border border-primary text-xl sm:text-lg">
+            <button className="p-4 border border-primary text-xl sm:text-lg font-semibold">
               Детальніше
             </button>
           </Link>

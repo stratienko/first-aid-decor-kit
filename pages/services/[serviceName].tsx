@@ -68,7 +68,7 @@ export const ServicePage = (props: Props) => {
             </h1>
             <article className="grid xl:grid-cols-2 gap-8 xl:gap-16 leading-relaxed">
               <div className="row-start-2 xl:row-start-1">
-                <ol className="text-lg sm:text-xl sm:mb-8">
+                <ol className="sm:mb-8">
                   <For
                     items={algorithm}
                     render={(step, i) => {
@@ -85,10 +85,10 @@ export const ServicePage = (props: Props) => {
                               Як це працює?
                             </p>
                           ) : null}
-                          <span className="mr-4 w-8 h-8 overflow-hidden rounded-[50%] bg-primary inline-flex items-center justify-center text-sm text-white">
+                          <span className="mr-4 w-8 h-8 overflow-hidden rounded-[50%] bg-primary inline-flex items-center justify-center font-sans text-white">
                             {stepIndex}
                           </span>
-                          <span className="leading-loose">{step}</span>
+                          <span className="text-xl leading-loose">{step}</span>
                         </li>
                       );
                     }}
@@ -99,15 +99,15 @@ export const ServicePage = (props: Props) => {
                     <p className="font-semibold text-2xl md:text-4xl">
                       Скільки це коштує?
                     </p>
-                    <p className="text-lg sm:text-xl">{price}</p>
+                    <p className="text-xl leading-loose">{price}</p>
                   </div>
                 ) : null}
                 <a
                   target="_blank"
+                  rel="noreferrer"
                   about="Консультація"
                   href="https://t.me/vbalakireva"
-                  className="block text-center w-full sm:w-1/2 p-4 border border-primary text-lg"
-                  rel="noreferrer"
+                  className="block text-center w-full sm:w-1/2 p-4 border border-primary text-xl font-semibold"
                 >
                   Напишіть нам
                 </a>

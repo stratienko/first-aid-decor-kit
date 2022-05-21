@@ -10,7 +10,7 @@ export const Intro = () => {
             <h1 className="mb-8 xl:mb-16 text-4xl xl:text-6xl font-bold">
               Ваш персональний декоратор інтер&apos;єру
             </h1>
-            <p className="text-xl sm:text-lg">
+            <p className="text-xl leading-relaxed">
               First Aid Decor — це проект, створений для тих, хто хоче додати
               більше естетики у кожен день та жити у затишку. Давайте
               знайомитись! Мене звуть Влада і вже 8 років я працюю із красою!
@@ -20,7 +20,7 @@ export const Intro = () => {
             target="_blank"
             about="Консультація"
             href="https://t.me/vbalakireva"
-            className="text-center w-full sm:w-1/2 p-4 border border-primary text-xl sm:text-lg"
+            className="text-center w-full sm:w-1/2 p-4 border border-primary text-xl sm:text-lg font-semibold"
             rel="noreferrer"
           >
             Консультація

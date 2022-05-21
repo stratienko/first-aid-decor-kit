@@ -12,7 +12,7 @@ module.exports = {
     colors: {
       ...colors,
       primary: "#3f4241",
-      secondary: "#e5e5e5",
+      secondary: "#f6f6f6",
     },
     extend: {
       animation: {

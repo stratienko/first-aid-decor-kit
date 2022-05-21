@@ -18,7 +18,7 @@ export const Navigation = React.memo(() => {
 
   return (
     <Menu as={Fragment}>
-      <nav className="relative h-full w-full max-w-360 flex justify-between items-center font-playfair text-lg tracking-wider text-primary z-20">
+      <nav className="relative h-full w-full max-w-360 flex justify-between items-center font-playfair text-lg tracking-wider text-primary">
         <Link href={"/"} passHref>
           <div className="cursor-pointer pl-4 sm:p-0">
             <Logo />

@@ -67,7 +67,7 @@ export const getServices = (): Array<TService> => {
       previewSrc: "/images/services/holiday-decoration/preview.jpeg",
       price: "Від 2000 гривень",
       serviceName: "holiday-decoration",
-      title: "Святкове декорування та сервіровка",
+      title: "Святкове декорування та сервірування",
     },
     {
       algorithm: [

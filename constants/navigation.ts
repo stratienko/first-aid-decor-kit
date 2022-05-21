@@ -1,9 +1,5 @@
-const homePagePattern = /^\/$/;
-const notFoundPattern = /^\/(404)$/;
-const servicesPagePattern = /^\/services\//;
-
 export const getNavigationItems = (
-  pathname: string
+  pathname: string = "/"
 ): Array<TNavigationItem> => {
   const defaultNavItems: Array<TNavigationItem> = [
     {
@@ -18,26 +14,5 @@ export const getNavigationItems = (
     },
   ];
 
-  if (homePagePattern.test(pathname)) return defaultNavItems;
-
-  if (notFoundPattern.test(pathname))
-    return [
-      {
-        href: "/",
-        passHref: true,
-        routeName: "Додому",
-      },
-    ];
-
-  if (servicesPagePattern.test(pathname))
-    return [
-      {
-        href: "/",
-        passHref: true,
-        routeName: "Додому",
-      },
-      ...defaultNavItems,
-    ];
-
-  return [];
+  return defaultNavItems;
 };
