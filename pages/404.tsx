@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import TheBestCatInTheWorld from "public/images/404.jpeg";
 import React from "react";
 
 export const Page404 = () => {
@@ -22,8 +23,9 @@ export const Page404 = () => {
           </article>
           <figure className="relative w-full opacity-0 scale-98 animate-fade-in">
             <Image
+              priority={true}
               alt="The best cat in the world"
-              src={"/images/404.jpeg"}
+              src={TheBestCatInTheWorld}
               layout="responsive"
               height={2890}
               width={2890}

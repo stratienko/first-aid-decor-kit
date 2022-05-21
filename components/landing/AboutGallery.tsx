@@ -35,7 +35,7 @@ export const AboutGallery = () => {
         )}
       >
         <Image
-          priority={false}
+          priority={true}
           src="/images/gallery-image-1.jpeg"
           layout="responsive"
           height={1800}
@@ -49,7 +49,7 @@ export const AboutGallery = () => {
         )}
       >
         <Image
-          priority={false}
+          priority={true}
           src="/images/gallery-image-2.jpeg"
           layout="responsive"
           height={3600}
@@ -63,7 +63,7 @@ export const AboutGallery = () => {
         )}
       >
         <Image
-          priority={false}
+          priority={true}
           src="/images/gallery-image-3.jpeg"
           layout="responsive"
           height={3600}
@@ -77,7 +77,7 @@ export const AboutGallery = () => {
         )}
       >
         <Image
-          priority={false}
+          priority={true}
           src="/images/gallery-image-4.jpeg"
           layout="responsive"
           height={1800}

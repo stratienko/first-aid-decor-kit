@@ -16,11 +16,6 @@ export const getNavigationItems = (
       passHref: true,
       routeName: "Наші послуги",
     },
-    {
-      href: "/#contacts",
-      passHref: true,
-      routeName: "Контакти",
-    },
   ];
 
   if (homePagePattern.test(pathname)) return defaultNavItems;

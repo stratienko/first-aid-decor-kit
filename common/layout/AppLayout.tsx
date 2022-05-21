@@ -1,4 +1,4 @@
-import { Navigation } from "../navigation";
+import Navigation from "../navigation";
 import React, { PropsWithChildren } from "react";
 
 export const AppLayout = ({ children }: PropsWithChildren<{}>) => {

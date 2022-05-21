@@ -1,9 +1,9 @@
-import type { GetStaticProps, NextPage } from "next";
 import Head from "next/head";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { Fragment } from "react";
 import { About, Intro, Services } from "components/landing";
+import { Fragment } from "react";
 import { getServices } from "constants/services";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import type { GetStaticProps, NextPage } from "next";
 
 type Props = {
   services: Array<TService>;
