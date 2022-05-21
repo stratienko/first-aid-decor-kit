@@ -62,11 +62,11 @@ export const ServicePage = (props: Props) => {
       </Head>
       <main className="z-10 w-full flex flex-col justify-center items-center">
         <section className="w-full px-4 sm:px-8 flex flex-col justify-start items-center">
-          <div className="py-8 sm:py-16 w-full max-w-360 font-noto text-primary overscroll-none">
+          <div className="py-8 sm:py-16 w-full max-w-360 font-playfair text-primary overscroll-none">
             <h1 className="font-bold text-4xl md:text-6xl mb-8 sm:mb-16">
               {title}
             </h1>
-            <article className="grid xl:grid-cols-2 gap-8 xl:gap-16 ">
+            <article className="grid xl:grid-cols-2 gap-8 xl:gap-16 leading-relaxed">
               <div className="row-start-2 xl:row-start-1">
                 <ol className="text-lg sm:text-xl sm:mb-8">
                   <For
@@ -112,7 +112,7 @@ export const ServicePage = (props: Props) => {
                   Напишіть нам
                 </a>
               </div>
-              <div className="self-baseline xl:sticky xl:top-4">
+              <div className="self-baseline">
                 <ServiceGallery galleryPath={galleryPath} />
               </div>
             </article>

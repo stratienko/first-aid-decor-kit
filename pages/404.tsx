@@ -8,7 +8,7 @@ export const Page404 = () => {
     <main className="w-full flex flex-col justify-center items-center">
       <section className="h-full w-full px-4 py-8 sm:px-8 sm:py-16 flex items-center justify-center">
         <div className="w-full max-w-360 grid xl:grid-cols-2 gap-8 xl:gap-16">
-          <article className="font-noto tracking-wider text-primary w-full xl:py-16 flex flex-col items-start">
+          <article className="font-playfair tracking-wider text-primary w-full xl:py-16 flex flex-col items-start">
             <h1 className="mb-8 xl:mb-16 text-4xl xl:text-6xl">Йой!</h1>
             <p className="mb-8 xl:mb-16 text-xl">
               Щось пішло не так! Схоже, що такої сторінки нема. Але не варто

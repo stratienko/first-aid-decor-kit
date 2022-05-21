@@ -29,7 +29,7 @@ module.exports = {
         "span-7": "span 7 / span 7",
       },
       fontFamily: {
-        noto: ["Noto Serif Display", "serif"],
+        playfair: ["Playfair Display", "serif"],
       },
       height: {
         120: "30rem",

@@ -47,7 +47,7 @@ export const MobileMenu = (props: NavigationProps) => {
 
   return (
     <Fragment>
-      <Menu.Button className="md:hidden p-4">
+      <Menu.Button className="md:hidden p-4 focus:outline-none">
         {({ open }) => {
           return open ? <CloseIcon /> : <MenuIcon />;
         }}
@@ -61,7 +61,7 @@ export const MobileMenu = (props: NavigationProps) => {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-0"
       >
-        <Menu.Items className="border border-t-primary divide-y divide-primary absolute w-full flex flex-col top-20 right-0 origin-top-right text-primary bg-secondary shadow-lg">
+        <Menu.Items className="focus:outline-none border border-t-primary divide-y divide-primary absolute w-full flex flex-col top-20 right-0 origin-top-right text-primary bg-secondary shadow-lg">
           <For
             items={routes}
             render={(linkProps) => {

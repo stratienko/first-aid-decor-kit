@@ -34,7 +34,7 @@ export const ServiceItem = React.memo(({ service }: Props) => {
   return (
     <li
       ref={listElement}
-      className={"group opacity-0 scale-98 bg-white transition-all flex flex-col delay-75 shadow-lg overflow-hidden font-noto text-primary ".concat(
+      className={"group opacity-0 scale-98 bg-white transition-all flex flex-col delay-75 shadow-lg overflow-hidden font-playfair text-primary ".concat(
         isShown ? "animate-fade-in" : ""
       )}
     >
@@ -50,12 +50,14 @@ export const ServiceItem = React.memo(({ service }: Props) => {
       </div>
       <div className="flex-1 flex flex-col justify-between p-8 tracking-wider">
         <div>
-          <h1 className="mb-8 font-bold text-2xl">{title}</h1>
-          <p className="mb-8">{description}</p>
+          <h1 className="mb-8 font-bold  leading-relaxed text-2xl">{title}</h1>
+          <p className="mb-8 text-xl sm:text-lg leading-relaxed">
+            {description}
+          </p>
         </div>
         {!disabled ? (
           <Link href={`/services/${serviceName}`} passHref>
-            <button className="p-4 border border-primary text-lg">
+            <button className="p-4 border border-primary text-xl sm:text-lg">
               Детальніше
             </button>
           </Link>
