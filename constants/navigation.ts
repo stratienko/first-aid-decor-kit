@@ -14,5 +14,13 @@ export const getNavigationItems = (
     },
   ];
 
+  if (pathname === "/404") return defaultNavItems;
+
+  if (pathname != "/")
+    return [
+      { href: "/", passHref: true, routeName: "Додому" },
+      ...defaultNavItems,
+    ];
+
   return defaultNavItems;
 };
