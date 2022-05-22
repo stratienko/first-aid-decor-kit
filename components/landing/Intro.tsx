@@ -1,4 +1,8 @@
+import emailLogo from "public/icons/email.svg";
+import Image from "next/image";
+import instagramLogo from "public/icons/instagram.svg";
 import React from "react";
+import telegramLogo from "public/icons/telegram.svg";
 import { IntroGallery } from "./IntroGallery";
 
 export const Intro = () => {
@@ -16,15 +20,56 @@ export const Intro = () => {
               знайомитись! Мене звуть Влада і вже 8 років я працюю із красою!
             </p>
           </div>
-          <a
-            target="_blank"
-            about="Консультація"
-            href="https://t.me/vbalakireva"
-            className="text-center w-full sm:w-1/2 p-4 border border-primary text-xl sm:text-lg font-semibold"
-            rel="noreferrer"
-          >
-            Консультація
-          </a>
+          <div className="w-full grid sm:grid-cols-2 gap-8 items-center text-xl sm:text-3xl text-primary">
+            <p className="font-semibold text-2xl md:text-4xl">Консультація:</p>
+            <div className="relative self-start flex justify-start items-center space-x-8">
+              <a
+                target="_blank"
+                about="Telegram"
+                href="https://t.me/vbalakireva"
+                className="inline-flex justify-center items-center border border-primary shadow-md p-3"
+                rel="noreferrer"
+              >
+                <Image
+                  alt="Telegram"
+                  src={telegramLogo}
+                  layout="fixed"
+                  height={32}
+                  width={32}
+                />
+              </a>
+              <a
+                target="_blank"
+                about="Instagram"
+                href="https://www.instagram.com/v_balakireva/"
+                className="inline-flex justify-center items-center border border-primary shadow-md p-3"
+                rel="noreferrer"
+              >
+                <Image
+                  alt="Instagram Link"
+                  src={instagramLogo}
+                  layout="fixed"
+                  height={32}
+                  width={32}
+                />
+              </a>
+              <a
+                target="_blank"
+                about="Email"
+                href="mailto:fadk.info@gmail.com?subject=Консультація із декорування"
+                className="inline-flex justify-center items-center border border-primary shadow-md p-3"
+                rel="noreferrer"
+              >
+                <Image
+                  alt="Write An Email"
+                  src={emailLogo}
+                  layout="fixed"
+                  height={32}
+                  width={32}
+                />
+              </a>
+            </div>
+          </div>
         </article>
         <IntroGallery />
       </div>

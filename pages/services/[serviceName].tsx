@@ -1,6 +1,10 @@
+import emailLogo from "public/icons/email.svg";
 import For from "common/for";
 import Head from "next/head";
+import Image from "next/image";
+import instagramLogo from "public/icons/instagram.svg";
 import React from "react";
+import telegramLogo from "public/icons/telegram.svg";
 import { getServices } from "constants/services";
 import { GetStaticPaths, GetStaticProps } from "next/types";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
@@ -95,22 +99,65 @@ export const ServicePage = (props: Props) => {
                   />
                 </ol>
                 {price ? (
-                  <div className="mb-8 sm:mb-16 space-y-8">
+                  <div className="mb-8 space-y-8">
                     <p className="font-semibold text-2xl md:text-4xl">
                       Скільки це коштує?
                     </p>
                     <p className="text-xl leading-loose">{price}</p>
                   </div>
                 ) : null}
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  about="Консультація"
-                  href="https://t.me/vbalakireva"
-                  className="block text-center w-full sm:w-1/2 p-4 border border-primary text-xl font-semibold"
-                >
-                  Напишіть нам
-                </a>
+                <div className="w-full grid sm:grid-cols-2 gap-8 items-center text-xl sm:text-3xl text-primary">
+                  <p className="font-semibold text-2xl md:text-4xl">
+                    Консультація:
+                  </p>
+                  <div className="relative self-start flex justify-start items-center space-x-8">
+                    <a
+                      target="_blank"
+                      about="Telegram"
+                      href="https://t.me/vbalakireva"
+                      className="inline-flex justify-center items-center border border-primary shadow-md p-3"
+                      rel="noreferrer"
+                    >
+                      <Image
+                        alt="Telegram"
+                        src={telegramLogo}
+                        layout="fixed"
+                        height={32}
+                        width={32}
+                      />
+                    </a>
+                    <a
+                      target="_blank"
+                      about="Instagram"
+                      href="https://www.instagram.com/v_balakireva/"
+                      className="inline-flex justify-center items-center border border-primary shadow-md p-3"
+                      rel="noreferrer"
+                    >
+                      <Image
+                        alt="Instagram Link"
+                        src={instagramLogo}
+                        layout="fixed"
+                        height={32}
+                        width={32}
+                      />
+                    </a>
+                    <a
+                      target="_blank"
+                      about="Email"
+                      href={`mailto:fadk.info@gmail.com?subject=${service.title}`}
+                      className="inline-flex justify-center items-center border border-primary shadow-md p-3"
+                      rel="noreferrer"
+                    >
+                      <Image
+                        alt="Write An Email"
+                        src={emailLogo}
+                        layout="fixed"
+                        height={32}
+                        width={32}
+                      />
+                    </a>
+                  </div>
+                </div>
               </div>
               <div className="self-baseline">
                 <ServiceGallery galleryPath={galleryPath} />
