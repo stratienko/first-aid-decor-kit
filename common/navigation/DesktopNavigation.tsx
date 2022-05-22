@@ -15,7 +15,7 @@ export const DesktopNavigation = (props: NavigationProps) => {
 
           return (
             <Link {...restLinkProps} key={restLinkProps.href.toString()}>
-              <span className="p-2 cursor-pointer hover:underline">
+              <span className="p-2 cursor-pointer hover:underline text-lg">
                 {routeName}
               </span>
             </Link>

@@ -33,7 +33,7 @@ export const IntroGallery = () => {
       className="grid sm:grid-cols-5 gap-8 content-evenly"
     >
       <div
-        className={"opacity-0 scale-98 relative col-span-2 ".concat(
+        className={"opacity-0 scale-98 relative col-span-2 rounded-md ".concat(
           isShown ? "animate-fade-in delay-animation" : ""
         )}
       >

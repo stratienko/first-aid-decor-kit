@@ -15,9 +15,7 @@ export const Logo = () => {
           alt="First Aid Decor Logo"
         />
       </span>
-      <h1 className="group-hover:underline text-xl sm:text-base">
-        First Aid Decor
-      </h1>
+      <h1 className="group-hover:underline text-lg">First Aid Decor</h1>
     </div>
   );
 };
