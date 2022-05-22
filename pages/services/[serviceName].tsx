@@ -113,14 +113,14 @@ export const ServicePage = (props: Props) => {
                   <div className="relative self-start flex justify-start items-center space-x-8">
                     <a
                       target="_blank"
-                      about="Telegram"
-                      href="https://t.me/vbalakireva"
+                      about="Email"
+                      href={`mailto:fadk.info@gmail.com?subject=${service.title}`}
                       className="inline-flex justify-center items-center border border-primary shadow-md p-3"
                       rel="noreferrer"
                     >
                       <Image
-                        alt="Telegram"
-                        src={telegramLogo}
+                        alt="Write An Email"
+                        src={emailLogo}
                         layout="fixed"
                         height={32}
                         width={32}
@@ -143,14 +143,14 @@ export const ServicePage = (props: Props) => {
                     </a>
                     <a
                       target="_blank"
-                      about="Email"
-                      href={`mailto:fadk.info@gmail.com?subject=${service.title}`}
+                      about="Telegram"
+                      href="https://t.me/vbalakireva"
                       className="inline-flex justify-center items-center border border-primary shadow-md p-3"
                       rel="noreferrer"
                     >
                       <Image
-                        alt="Write An Email"
-                        src={emailLogo}
+                        alt="Telegram"
+                        src={telegramLogo}
                         layout="fixed"
                         height={32}
                         width={32}
