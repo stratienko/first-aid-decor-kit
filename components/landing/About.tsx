@@ -6,10 +6,14 @@ export const About = () => {
     <section className="relative w-full px-4 sm:px-8 flex items-center justify-center">
       <span id="about" className="sr-only absolute -top-20" />
       <div className="py-8 sm:py-16 w-full max-w-360 grid xl:grid-cols-2 gap-8 xl:gap-16">
-        <AboutGallery />
-        <article className="font-playfair tracking-wider text-primary xl:py-16">
+        <div className="self-baseline">
+          <AboutGallery />
+        </div>
+        <article className="font-playfair tracking-wider text-primary xl:py-8">
           <div className="w-full space-y-8 xl:space-y-16">
-            <h1 className="text-4xl xl:text-6xl font-bold">Про нас</h1>
+            <h1 className="text-4xl xl:text-5xl 2xl:text-6xl font-bold">
+              Про нас
+            </h1>
             <div className="space-y-8">
               <p className="text-xl leading-relaxed">
                 Я творила як флорист, event-декоратор та рік навчалась історії
