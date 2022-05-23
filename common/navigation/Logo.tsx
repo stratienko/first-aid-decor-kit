@@ -4,7 +4,7 @@ import logo from "public/icons/logo.svg";
 
 export const Logo = () => {
   return (
-    <div className="group p-4 flex justify-center items-center text-xl text-primary">
+    <div className="group flex justify-center items-center text-xl text-primary">
       <span className="flex mr-4">
         <Image
           src={logo}
