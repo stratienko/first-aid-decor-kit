@@ -43,6 +43,7 @@ export const ServiceItem = React.memo(({ service }: Props) => {
           src={previewSrc}
           priority={true}
           alt="Article Image"
+          sizes="50vw"
           width={2400}
           height={2400}
           layout="responsive"

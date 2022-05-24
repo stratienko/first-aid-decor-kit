@@ -23,6 +23,7 @@ export const Page404 = () => {
           </article>
           <figure className="relative w-full opacity-0 scale-98 animate-fade-in">
             <Image
+              sizes="50vw"
               priority={true}
               alt="The best cat in the world"
               src={TheBestCatInTheWorld}

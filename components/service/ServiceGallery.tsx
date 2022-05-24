@@ -12,6 +12,7 @@ export const ServiceGallery = (props: Props) => {
     <figure className="grid gap-8 sm:grid-cols-2">
       <div className="relative opacity-0 scale-98 animate-fade-in delay-animation row-span-1">
         <Image
+          sizes="50vw"
           priority={true}
           src={`${galleryPath}/preview.jpeg`}
           alt="Service Preview"
@@ -22,6 +23,7 @@ export const ServiceGallery = (props: Props) => {
       </div>
       <div className="relative opacity-0 scale-98 animate-fade-in delay-animation hidden row-span-2 sm:block">
         <Image
+          sizes="50vw"
           priority={true}
           src={`${galleryPath}/gallery-1.jpeg`}
           alt="Service Preview"
@@ -32,6 +34,7 @@ export const ServiceGallery = (props: Props) => {
       </div>
       <div className="relative opacity-0 scale-98 animate-fade-in delay-animation hidden row-span-2 sm:block">
         <Image
+          sizes="50vw"
           priority={true}
           src={`${galleryPath}/gallery-2.jpeg`}
           alt="Service Preview"
@@ -42,6 +45,7 @@ export const ServiceGallery = (props: Props) => {
       </div>
       <div className="relative opacity-0 scale-98 animate-fade-in delay-animation hidden row-span-1 sm:block">
         <Image
+          sizes="50vw"
           priority={true}
           src={`${galleryPath}/gallery-3.jpeg`}
           alt="Service Preview"

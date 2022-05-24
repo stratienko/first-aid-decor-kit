@@ -39,6 +39,7 @@ export const AboutGallery = () => {
       >
         <Image
           src={About1}
+          sizes="50vw"
           layout="responsive"
           priority={true}
           height={1800}
@@ -53,6 +54,7 @@ export const AboutGallery = () => {
       >
         <Image
           src={About2}
+          sizes="50vw"
           layout="responsive"
           priority={true}
           height={3600}
@@ -67,6 +69,7 @@ export const AboutGallery = () => {
       >
         <Image
           src={About3}
+          sizes="50vw"
           layout="responsive"
           priority={true}
           height={3600}
@@ -81,6 +84,7 @@ export const AboutGallery = () => {
       >
         <Image
           src={About4}
+          sizes="50vw"
           layout="responsive"
           priority={true}
           height={1800}

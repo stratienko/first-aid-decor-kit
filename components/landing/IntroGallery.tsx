@@ -39,6 +39,7 @@ export const IntroGallery = () => {
       >
         <Image
           src={Intro1}
+          sizes="50vw"
           priority={true}
           layout="responsive"
           height={2400}
@@ -51,14 +52,26 @@ export const IntroGallery = () => {
           isShown ? "animate-fade-in delay-animation" : ""
         )}
       >
-        <Image src={Intro2} priority={true} layout="fill" alt="Intro" />
+        <Image
+          src={Intro2}
+          sizes="50vw"
+          priority={true}
+          layout="fill"
+          alt="Intro"
+        />
       </div>
       <div
         className={"opacity-0 scale-98 hidden sm:block relative col-span-3 ".concat(
           isShown ? "animate-fade-in delay-animation" : ""
         )}
       >
-        <Image src={Intro3} priority={true} layout="fill" alt="Intro" />
+        <Image
+          src={Intro3}
+          sizes="50vw"
+          priority={true}
+          layout="fill"
+          alt="Intro"
+        />
       </div>
       <div
         className={"opacity-0 scale-98 hidden sm:block relative col-span-2 ".concat(
@@ -67,6 +80,7 @@ export const IntroGallery = () => {
       >
         <Image
           src={Intro4}
+          sizes="50vw"
           priority={true}
           layout="responsive"
           height={2400}
