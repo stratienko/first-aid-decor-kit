@@ -129,7 +129,7 @@ export const ServicePage = (props: Props) => {
                     <a
                       target="_blank"
                       about="Instagram"
-                      href="https://www.instagram.com/v_balakireva/"
+                      href="https://www.instagram.com/vlada_stratienko/"
                       className="inline-flex justify-center items-center border border-primary shadow-md p-3"
                       rel="noreferrer"
                     >
